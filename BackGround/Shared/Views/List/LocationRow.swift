@@ -70,10 +70,6 @@ struct LocationRow: View {
     }
 }
 
-//func shouldTriggerNavigationLink(transition: Binding<String>, ident: String) -> Binding<Bool> {
-//    return Binding(get: )
-//}
-
 struct LocationRow_Previews: PreviewProvider {
     static var previews: some View {
         return LocationRow(location: PersistenceController.getSampleLocation(), programmaticAddTransition: .constant("")).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
